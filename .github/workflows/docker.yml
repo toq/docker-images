@@ -19,6 +19,8 @@ jobs:
       matrix:
         version: [
           { runner: "blacksmith-2vcpu-ubuntu-2204", tag: "db", context: "./db/" },
+          { runner: "blacksmith-2vcpu-ubuntu-2204", tag: "postgres", context: "./postgres/" },
+          { runner: "blacksmith-2vcpu-ubuntu-2204-arm", tag: "postgres-18-arm", context: "./postgres/" },
           { runner: "blacksmith-2vcpu-ubuntu-2204", tag: "dbmate", context: "./dbmate/" },
           { runner: "blacksmith-2vcpu-ubuntu-2204-arm", tag: "dbmate-arm", context: "./dbmate/" },
         ]
